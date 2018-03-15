@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rimocon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="s162015.bluecamera.RimoconActivity"
+    android:orientation="vertical"
+    android:background="@drawable/mono_arctic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout_select"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/ListView_Connect"
+            android:choiceMode="multipleChoice"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:divider="@null"
+            android:paddingTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/scan_devices_icon"
+                android:id="@+id/imageView2"
+                android:scaleType="fitStart"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:text="@string/rescan"
+                    android:layout_width="match_parent"
+                    android:id="@+id/button_scan"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_state_square_back"
+                    android:layout_height="40dp" />
+
+                <Button
+                    android:text="@string/start_take"
+                    android:layout_width="match_parent"
+                    android:id="@+id/button_startTaking"
+                    android:layout_weight="1"
+                    android:background="@drawable/image_state_square_back"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

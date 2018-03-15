@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2643e0</color>
+    <color name="colorPrimaryDark">#081a91</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="multipleSelectOn">#8c8c8c</color>
+    <color name="multipleSelectOff">#343434</color>
+</resources>
